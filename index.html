@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script type="text/javascript">
+   function handleIt(txt) {
+     document.getElementById('myList').innerHTML += "<li>" + txt + "</li>"
+   }
+  </script>
+</head>
+<body>
+  <h1>Shopping List</h1>
+  <p>This is my shopping list for next week</p>
+  <form name="myform" action="javascript:handleIt(Shopping_item.value)">
+   <input type="text" name="Shopping_item" id="Shopping_item">
+   <input name="Submit" type="submit" value="Add item"/>
+  </form>
+</form>
+
+<ul id="myList">
+  <li id="item1">Coffee</li>
+  <li id="item2">Tea</li>
+  <li id="item3">Milk</li>
+  <li id="item4">Cheese</li>
+</ul>
+
+</body>
+</html>
